@@ -1,0 +1,17 @@
+server:
+  port: 8080
+
+spring:
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  datasource:
+    platform: postgres
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://mel.db.elephantsql.com/pxxfdwcc
+    username: pxxfdwcc
+    password: nBg9OQie81hvHL5Uie5LEHWglSRaWSAy
+  liquibase:
+      change-log: classpath:/database/changelog/master.xml
